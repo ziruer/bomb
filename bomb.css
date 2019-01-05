@@ -1,0 +1,128 @@
+.wrapper{
+	width: 500px;
+	height: 800px;
+
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+}
+
+
+.startgame{
+	width: 180px;
+	height: 60px;
+
+	position: absolute;
+	top: 100px;
+	left: 200px;
+
+
+	background-image: url("images/play.png");
+	background-size: 100% 100%;
+	cursor: pointer;
+}
+
+.box, .mask{
+	position: absolute;
+
+	width: 500px;
+	height: 500px;
+	border: 1px solid gray;
+
+	top: 100px;
+
+	/*top: 80px;
+	right: 150px;*/
+
+	/*top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;*/
+
+	
+}
+
+.mask{
+	z-index: 1;
+}
+
+.block{
+	width: 49px;
+	height: 49px;
+
+	border-bottom: 1px solid black;
+	border-right: 1px solid black;
+
+	float: left;
+
+
+}
+
+.mask-block{
+	width: 49px;
+	height: 49px;
+
+	border-bottom: 1px solid black;
+	border-right: 1px solid black;
+	background-color: #0099CC;
+	float: left;
+	/*opacity: 0;*/
+}
+
+.isLei{
+	background-image: url('images/bomb.jpeg');
+	background-size: 100% 100%;
+}
+
+.num{
+	color: #777;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.flag{
+	background-image: url('images/flag.jpeg');
+	background-size: 100% 100%;
+}
+
+
+#restart{
+	background-color: #3A4953;
+	color: #FFFFFF;
+	text-decoration: none;
+	text-align: center;
+	padding-top: 8px;
+	/*margin-top: 80px;*/
+	display: block; /* 作为一个块 */
+	width: 160px;
+	height: 30px;
+	cursor: pointer;
+
+	position: absolute;
+	top: 40px;
+	/*margin-left: -250px;*/
+
+	/*font-weight: bold;*/
+		/*padding-right: 50px;
+	padding-bottom: 8px;
+	padding-left: 50px;*/
+}
+#restart:hover{
+  background-color: #0099CC;
+}
+
+#result{
+	position: absolute;
+	/*display: block;*/
+	width: 500px;
+	top:250px;
+	font-size: 70px;
+	color: #f40;
+	text-align: center;
+	z-index: 99;
+	display: none;
+}

@@ -11,8 +11,6 @@ var minesOver;
 var blocks;
 var maskBlocks;
 
-// alert("hello");
-
 bindEvent();
 
 function bindEvent(){
@@ -23,7 +21,7 @@ function bindEvent(){
 	}
 }
 
-
+// 开始游戏
 function startgame() {
 	console.log('startgame!!!');
 	box.style.display = 'block';		
@@ -35,6 +33,7 @@ function startgame() {
 	init();
 }
 
+// 初始化
 function init()
 {
 	minesOver = 10;
@@ -212,7 +211,7 @@ function showAllBombs(){
 }
 
 
-// 根据遮罩的block或者数据层block
+// 根据遮罩的block获取数据层block
 function getMappingBlock(maskBlock){
 	var position = maskBlock.id.split("#");
 	var index = (+position[0])*10 + (+position[1]);
